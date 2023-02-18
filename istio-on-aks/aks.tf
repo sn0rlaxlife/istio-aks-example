@@ -15,7 +15,7 @@ module "aks" {
   enable_host_encryption           = false
   log_analytics_workspace_enabled  = false
   agents_min_count                 = 1
-  agents_max_count                 = 5
+  agents_max_count                 = 3
   agents_count                     = null # Please set `agents_count` `null` while `enable_auto_scaling` is `true` to avoid possible `agents_count` changes.
   agents_max_pods                  = 100
   agents_pool_name                 = "system"
