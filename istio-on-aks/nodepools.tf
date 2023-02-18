@@ -5,7 +5,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "user" {
   enable_auto_scaling   = true
   node_count            = 1
   min_count             = 1
-  max_count             = 5
+  max_count             = 3
   vnet_subnet_id        = module.network.vnet_subnets[0]
   depends_on            = [module.aks]
 }
